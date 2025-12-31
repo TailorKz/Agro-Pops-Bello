@@ -1,0 +1,126 @@
+/* src/pages/Login.css */
+
+.login-container {
+    height: 100vh;
+    width: 100%;
+    background-color: #0C5821; /* Fundo verde oficial */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px; /* Tamanho padrão do card */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+}
+
+.login-header .login-logo {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+
+.login-header h2 {
+    color: #0C5821;
+    margin-bottom: 5px;
+}
+
+.login-header p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    text-align: left;
+}
+
+
+.input-group label {
+    display: block;
+    color: #0C5821;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    font-family: 'Prompt', sans-serif;
+}
+
+.input-group input:focus {
+    border-color: #0C5821;
+    background-color: #F1F8E9;
+}
+
+.btn-login {
+    background-color: #0C5821;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    background-color: #083b16;
+}
+
+.msg-erro {
+    color: red;
+    font-size: 14px;
+}
+
+.login-footer {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #666;
+}
+
+.login-footer a {
+    color: #0C5821;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 480px) {
+    .login-container {
+        background-color: #EFF7E8;
+    }
+    
+    .login-card {
+        box-shadow: none;
+        background-color: transparent;
+        padding: 20px 0;
+    }
+
+    .input-group input {
+        background-color: white;
+        border: 1px solid #ddd;
+    }
+}
